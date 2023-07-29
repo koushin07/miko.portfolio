@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Montserrat:wght@500&family=Open+Sans:ital@1&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+
+/* Hide the scrollbar */
+body {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Chrome, Edge, and Safari */
+  }
+  
+  /* Customize the scrollbar track */
+  body::-webkit-scrollbar-track {
+    background-color: transparent; /* For Chrome, Edge, and Safari */
+  }
+  
+  /* Customize the scrollbar thumb */
+  body::-webkit-scrollbar-thumb {
+    background-color: transparent; /* For Chrome, Edge, and Safari */
+  }
+  
+  /* Set a fixed width for the scrollbar thumb */
+  body::-webkit-scrollbar-thumb:vertical {
+    width: 6px; /* Adjust as needed */
+  }
+  
+  /* Set a fixed height for the scrollbar thumb */
+  body::-webkit-scrollbar-thumb:horizontal {
+    height: 6px; /* Adjust as needed */
+  }
+  
