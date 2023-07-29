@@ -22,9 +22,9 @@ export default{
 </script>
 
 <template>
-  <div class="flex flex-row space-x-10" v-for="experience in experiences">
-    <div class="w-2/5 text-sm font-sans uppercase">{{ experience.date }}</div>
-    <div class="text-slate-200 w-full">
+  <div class="flex flex-col md:flex-row space-x-10" v-for="experience in experiences">
+    <div class="w-fit md:w-2/5 text-sm font-sans uppercase">{{ experience.date }}</div>
+    <div class="text-slate-200 w-fit md:w-full">
       <h1>{{ experience.title }}</h1>
       <p class="text-sm text-slate-400 pt-1">
         {{ experience.description }}
