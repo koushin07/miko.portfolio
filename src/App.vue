@@ -25,6 +25,9 @@ export default {
     currentRouteName() {
       return this.$route.name;
     },
+    isActiveRoute() {
+      return (route) => this.$route.path === route;
+    },
   },
   setup() {
     return {};
@@ -59,13 +62,22 @@ export default {
         </div>
         <div class="hidden md:flex mx-auto text-lg flex-col space-y-2">
           <ul class="font-semibold text-accent list-disc list-outside">
-            <li class="cursor-pointer hover:italic transition-all ease-in-out">
+            <li
+              :class="{ italic: isActiveRoute('/') }"
+              class="cursor-pointer hover:italic transition-all ease-in-out"
+            >
               <router-link to="/">About</router-link>
             </li>
-            <li class="cursor-pointer hover:italic transition-all ease-in-out">
+            <li
+              :class="{ italic: isActiveRoute('/experience') }"
+              class="cursor-pointer hover:italic transition-all ease-in-out"
+            >
               <router-link to="/experience">Experience </router-link>
             </li>
-            <li class="cursor-pointer hover:italic transition-all ease-in-out">
+            <li
+              :class="{ italic: isActiveRoute('/project') }"
+              class="cursor-pointer hover:italic transition-all ease-in-out"
+            >
               <router-link to="/project">Project</router-link>
             </li>
           </ul>
