@@ -2,10 +2,10 @@
   <div class="flex flex-col gap-10">
     <div class="glass flex flex-col md:flex-row space-x-10 h-fit p-2">
       <div class="w-52">
-        <img
+        <!-- <img
           src="./assets/eris.png"
           class="rounded shadow-3 object-scale-down shadow-gray-900 shadow-xl border border-gray-900"
-        />
+        /> -->
       </div>
       <div class="flex flex-col">
         <div class="text-slate-200 w-fit md:w-full">
@@ -22,12 +22,12 @@
       </div>
     </div>
     <div class="glass flex flex-col md:flex-row space-x-10 h-fit p-2">
-      <div class="w-52">
+      <!-- <div class="w-52">
         <img
           src="./assets/date-me.png"
           class="rounded shadow-3 object-scale-down shadow-gray-900 shadow-xl border border-gray-900"
         />
-      </div>
+      </div> -->
       <div class="text-slate-200 w-fit md:w-full">
         <h1>Date Me: Dating website</h1>
         <p class="text-sm text-slate-400 pt-1">
